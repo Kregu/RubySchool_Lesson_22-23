@@ -1,0 +1,11 @@
+headresser: Walter White, client: Tooioi, phone: 999999955555, date and time: Monnday, 15:30.
+headresser: Jessie Pinkman, client: Tooioi, phone: 3333335353, date and time: Monnday, 15:30.
+headresser: Gus Fring, client: serg, phone: 7777777777777, date and time: 20:50.
+headresser: Jessie Pinkman, client: Tooioi, phone: 12224444, date and time: 22:55.
+headresser: Walter White, client: serg, phone: 12224444, date and time: Monnday, 15:30.
+headresser: Jessie Pinkman, client: serg, phone: 12224444, date and time: Monnday, 15:30.
+headresser: Walter White, client: serg, phone: 12224444, date and time: 22:55.
+headresser: Walter White, client: serg, phone: 12224444, date and time: Monnday, 15:30.
+headresser: Jessie Pinkman, client: serg, phone: 99999888, date and time: Monnday, 15:30.
+headresser: Jessie Pinkman, client: serg, phone: 12224444, date and time: Monnday, 15:30.
+headresser: Jessie Pinkman, client: Garry, phone: 99999888, date and time: Thursday 22:55.

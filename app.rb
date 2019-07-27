@@ -41,6 +41,10 @@ get '/login/form' do
   erb :login_form
 end
 
+get '/sign_up' do
+  erb :sign_up
+end
+
 post '/visit' do
   @headresser = params[:headresser]
   @client_name = params[:client_name]
@@ -48,15 +52,15 @@ post '/visit' do
   @date_time = params[:date_time]
 
   # @title = "Thank you!"
-  # @message = "Dear #{@user_name}, we wait you at #{@date_time}"
+  @message = "Dear #{@client_name}, we wait you at #{@date_time}"
 
 
   f = File.open './public/users.txt', 'a'
   f.write "headresser: #{@headresser}, client: #{@client_name}, phone: #{@client_phone}, date and time: #{@date_time}.\n"
   f.close
 
-  where_user_came_from = session[:previous_url] || '/'
-  redirect to where_user_came_from
+  # where_user_came_from = session[:previous_url] || '/'
+  erb :sign_up
 end
 
 post '/contacts' do
@@ -67,8 +71,8 @@ post '/contacts' do
   f.write "client email: #{@client_email}\nmessage:\n#{@client_message}\n"
   f.close
 
-  where_user_came_from = session[:previous_url] || '/'
-  redirect to where_user_came_from
+  # where_user_came_from = session[:previous_url] || '/'
+  redirect to '/'
 end
 
 
