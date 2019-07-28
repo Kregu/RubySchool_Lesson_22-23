@@ -21,7 +21,7 @@ before '/secure/*' do
 end
 
 get '/' do
-  erb 'Can you handle a <a href="/secure/place">secret</a>?'
+  erb 'Hello dear friend!'
 end
 
 get '/about' do
