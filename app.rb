@@ -50,17 +50,17 @@ post '/visit' do
   @client_name = params[:client_name]
   @client_phone = params[:client_phone]
   @date_time = params[:date_time]
-
-  # @title = "Thank you!"
-  @message = "Dear #{@client_name}, we wait you at #{@date_time}"
+  @color = params[:color]
+  
+  @message = "Dear #{@client_name}, we wait you at #{@date_time}, your color #{@color}."
 
 
   f = File.open './public/users.txt', 'a'
-  f.write "headresser: #{@headresser}, client: #{@client_name}, phone: #{@client_phone}, date and time: #{@date_time}.\n"
+  f.write "headresser: #{@headresser}, client: #{@client_name}, phone: #{@client_phone}, date and time: #{@date_time}, color: #{@color}.\n"
   f.close
 
   # where_user_came_from = session[:previous_url] || '/'
-  erb :sign_up
+  erb @message
 end
 
 post '/contacts' do
