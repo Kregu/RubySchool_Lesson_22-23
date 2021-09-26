@@ -46,7 +46,7 @@ get '/sign_up' do
 end
 
 post '/visit' do
-  @headresser = params[:headresser]
+  @hairdresser = params[:hairdresser]
   @client_name = params[:client_name]
   @client_phone = params[:client_phone]
   @date_time = params[:date_time]
@@ -56,7 +56,7 @@ post '/visit' do
 
 
   f = File.open './public/users.txt', 'a'
-  f.write "headresser: #{@headresser}, client: #{@client_name}, phone: #{@client_phone}, date and time: #{@date_time}, color: #{@color}.\n"
+  f.write "hairdresser: #{@hairdresser}, client: #{@client_name}, phone: #{@client_phone}, date and time: #{@date_time}, color: #{@color}.\n"
   f.close
 
   # where_user_came_from = session[:previous_url] || '/'
