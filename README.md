@@ -1,7 +1,7 @@
 RubySchool, Lesson 22-23
 ========================
 
-Creating the Barbershop application by [sinatra-bootstrap](https://github.com/bootstrap-ruby/sinatra-bootstrap)
+Creating the Barbershop application on [sinatra-bootstrap](https://github.com/bootstrap-ruby/sinatra-bootstrap).
 
 
     git clone https://github.com/Kregu/RubySchool_lesson_22-23
